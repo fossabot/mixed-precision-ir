@@ -1,2 +1,2 @@
-# mixed-precision-ir
+# Mixed Precision Iterative Refinement
 Mixed Precision Iterative Refinement

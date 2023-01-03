@@ -36,3 +36,8 @@ build/
 build_msvc/
 build_gcc/
 build_clang/
+
+include/*
+lib/*
+bin/*
+test/testrunner

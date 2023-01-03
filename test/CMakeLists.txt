@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(mpir_tests)
 
-add_subdirectory(${MPIR_ROOT_DIR}/ext/googletest)
+add_subdirectory(${MPIR_ROOT_DIR}/ext/googletest gtbuild) 
 
 include_directories(${VERSION_INCLUDE_HEADERS_DIR})
 include_directories(${PROJECT_SOURCE_DIR}/ext/googletest/googletest/include)

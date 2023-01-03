@@ -1,7 +1,7 @@
-#include <semver.hpp>
+#include <version.hpp>
 #include <gtest/gtest.h>
 
-class SemverTest : public ::testing::Test {
+class VersionTest : public ::testing::Test {
 	protected:
 
 		 virtual void SetUp() {}
@@ -9,10 +9,10 @@ class SemverTest : public ::testing::Test {
 		 virtual void TearDown() {}
 
 		 virtual void verify(int index) {
-			 EXPECT_EQ(index == 10);
+			 EXPECT_EQ(index, 10);
 		 }
 };
 
-TEST_F(SemverTest, equals_10) {
+TEST_F(VersionTest, equals_10) {
 	verify(10);
 }

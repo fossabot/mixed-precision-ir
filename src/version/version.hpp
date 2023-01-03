@@ -3,9 +3,10 @@
 
 namespace ir {
 
-static constexpr std::string MAJOR_VERSION = "0";
-static constexpr std::string MINOR_VERSION = "1";
-static constexpr std::string PATCH_VERSION = "0";
+static const std::string MAJOR_VERSION = std::string("0");
+static const std::string MINOR_VERSION = std::string("1");
+static const std::string PATCH_VERSION = std::string("0");
 
 std::string get_semver();
+
 }

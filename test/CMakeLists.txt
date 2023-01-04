@@ -8,7 +8,6 @@ include_directories(${PROJECT_SOURCE_DIR}/ext/googletest/googletest/include)
 
 set(SOURCE_FILES main.cpp src/mpir_tests.cpp)
 
-
 add_executable(mpir_tests ${SOURCE_FILES})
 #target_link_libraries(mpir_tests semver gtest)
 target_link_libraries(mpir_tests gtest)

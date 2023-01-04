@@ -7,7 +7,7 @@ This repo contains the code associated with the paper: "Mixed Precision Iterativ
 This repo uses git submodules. The first step after pulling the repository is to configure the submodules:
 
 ```text
-> git submodules init && git submodules update
+> git submodule init && git submodule update
 ```
 
 After that, the repo is ready to be build:

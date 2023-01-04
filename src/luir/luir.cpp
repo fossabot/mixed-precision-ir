@@ -53,8 +53,43 @@ try {
     // const char* msg = "\n\n";
     if (argc != 3) {
 		std::cerr << "Not enough input arguments.\n";
-		std::cerr << "Usage:   % ./numeric_luir algo testMatrix\n";
-		std::cerr << "Example: % ./numeric_luir 21 steam3\n";
+		std::cerr << "Usage:   % ./luir algo testMatrix\n";
+		std::cerr << "Example: % ./luir 21 steam3\n";
+        std::cerr << "Target matrix options are:\n\
+                        lambers_well  // 2 x 2 well-conditioned matrix\n\
+                        lambers_ill   // 2 x 2 ill-conditioned matrix\n\
+                        h3            // 3 x 3 test matrix\n\
+                        q3            // 3 x 3 test matrix\n\
+                        int3          // 3x3 integer test matrix (low condition number)\n\
+                        faires74x3    // Burden Faires 3x3 Ill-conditioned\n\
+                        q4            // 4 x 4 test matrix\n\
+                        q5            // 4 x 4 test matrix\n\
+                        lu4           // 4 x 4 test matrix\n\
+                        s4            // 4 x 4 test matrix\n\
+                        rand4         // Random 4x4 (low condition) for testing\n\
+                        west0132      //    \n\
+                        west0167      //    \n\
+                        steam1        //    \n\
+                        steam3        //    \n\
+                        fs_183_1      //    \n\
+                        fs_183_3      //    \n\
+                        bwm200        // Chem. simulation 1e3.\n\
+                        gre_343       // Directed Weighted Graph\n\
+                        b1_ss         // 7x7 Chemical Process Simulation Problem\n\
+                        cage3         //    \n\
+                        pores_1       // 30x30 Computational Fluid Dynamics\n\
+                        Stranke94     // 10 x 10 Undirected Weighted Graph\n\
+                        Trefethen_20  // 20x20 Combinatorial Problem\n\
+                        bcsstk01      // 48x48\n\
+                        bcsstk03      // 112 x 112\n\
+                        bcsstk04      // 132 x 132\n\
+                        bcsstk05      // 153 x 153\n\
+                        bcsstk22      // 138 x 138\n\
+                        lund_a        //    \n\
+                        nos1          //    \n\
+                        arc130        //    \n\
+                        saylr1        // 238 x 238 CFD\n\
+                        tumorAntiAngiogenesis_2      //\n";
 		return EXIT_SUCCESS;  // signal successful completion for ctest
     }
 	int algo = atoi(argv[1]);

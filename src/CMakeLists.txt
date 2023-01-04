@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(ir)
 
 add_subdirectory(version)
-add_subdirectory(multifile)
+#add_subdirectory(multifile)
 add_subdirectory(luir)
 
 # semver CLI command

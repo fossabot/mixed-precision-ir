@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(solvers CXX)
 
 # Universal is a C++ header-only library, so we do not need to build anything
-include_directories(${MPIR_ROOT_DIR}/ext/stillwater-sc/universal/include)
+include_directories(${MPIR_ROOT_DIR}/ext/stillwater-sc/mtl4)
 
 # source files that make up the command
 set(SOURCE_FILES

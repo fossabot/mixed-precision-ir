@@ -33,6 +33,7 @@
 
 # CMake
 CMake/
+share/
 
 # Directories
 build/

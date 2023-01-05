@@ -2,13 +2,14 @@ cmake_minimum_required(VERSION 3.22)
 project(ir)
 
 add_subdirectory(version)
-add_subdirectory(quadratic)
-add_subdirectory(multifile)
-add_subdirectory(luir)
-
-# bring in Universal build/install/uninstall targets
-# so that you can experiment/use all the regression and utility code available in Universal
+# simple starter skeleton for projects that use the Universal Number System library
 add_subdirectory(universal)
+# a more complicated example project that consists of multiple source files
+add_subdirectory(multifile)
+# a purposefull example of a mixed-precision experiment for the quadratic equation
+add_subdirectory(quadratic)
+# a full blown mixed-precision algorithm development and optimization project targeting the Gaussian Elimination algorithm
+add_subdirectory(luir)
 
 # semver CLI command
 set(app_name semver)

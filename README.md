@@ -71,6 +71,18 @@ If you are on a Linux or MacOS system, you can add the bin directory to your pat
 
 For Windows, use the environment variable editor to do the same.
 
+
+## Streamlining the Build
+
+To just build the projects in mixed-precision-ir and ignore build targets in Universal and MTL4, use:
+
+```zsh
+> cmake -DBUILD_DEMONSTRATION=OFF -DENABLE_TESTS=OFF ..
+```
+
+
+
+
 # Project structure
 
 The following figure shows the project structure of this repository:

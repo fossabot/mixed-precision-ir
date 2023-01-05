@@ -17,5 +17,5 @@ add_executable(${app_name} ${SOURCE_FILES})
 set(folder "Tools")
 set_target_properties(${app_name} PROPERTIES FOLDER ${folder})
 
-target_link_libraries(semver version)
+target_link_libraries(semver versionLib)
 install(TARGETS semver DESTINATION ${MPIR_INSTALL_BIN_DIR})

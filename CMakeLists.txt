@@ -34,13 +34,13 @@ set(MPIR_INSTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
 set(MPIR_INSTALL_LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
 
 # constituent library headers
-set(IR_INCLUDE_HEADERS_DIR ${PROJECT_SOURCE_DIR}/src/ir)
+set(MTL4_INCLUDE_HEADERS_DIR ${PROJECT_SOURCE_DIR}/src/mtl4)
 set(VERSION_INCLUDE_HEADERS_DIR ${PROJECT_SOURCE_DIR}/src/version)
 
 add_definitions(-D UNIVERSAL_ENABLE_TEST=OFF)
 
 include_directories(${MPIR_INSTALL_INCLUDE_DIR})
-include_directories(${IR_INCLUDE_HEADERS_DIR})
+include_directories(${MTL4_INCLUDE_HEADERS_DIR})
 include_directories(${VERSION_INCLUDE_HEADERS_DIR})
 
 # Universal is a C++ header-only library, so we do not need to build anything
@@ -50,6 +50,9 @@ include_directories(${VERSION_INCLUDE_HEADERS_DIR})
 # within the IR workspace. Multiple includes will yield multiple definitions
 # of build, install, and uninstall targets.
 add_subdirectory(${MPIR_ROOT_DIR}/ext/stillwater-sc/universal build_universal) 
+
+# MTL4 is a C++ header-only library, so we do not need to build anything
+add_subdirectory(${MPIR_ROOT_DIR}/ext/stillwater-sc/mtl4 build_mtl4) 
 
 add_subdirectory(src)
 add_subdirectory(test)

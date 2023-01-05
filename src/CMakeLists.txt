@@ -8,8 +8,12 @@ add_subdirectory(universal)
 add_subdirectory(multifile)
 # a purposefull example of a mixed-precision experiment for the quadratic equation
 add_subdirectory(quadratic)
+
 # a full blown mixed-precision algorithm development and optimization project targeting the Gaussian Elimination algorithm
 add_subdirectory(luir)
+
+# mixed-precision algorithm development and optimization project targeting matrix inversion algorithms
+add_subdirectory(solvers)
 
 # semver CLI command
 set(app_name semver)

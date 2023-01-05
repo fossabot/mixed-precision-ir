@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
-project(multifile CXX)
+set(app_name multifile)
+project(${app_name} CXX)
 
-add_subdirectory(${MPIR_ROOT_DIR}/ext/stillwater-sc/universal build_universal) 
+# Universal is a C++ header-only library, so we do not need to build anything
 include_directories(${MPIR_ROOT_DIR}/ext/stillwater-sc/universal/include)
 
 # source files that make up the command
@@ -16,7 +17,10 @@ set(SOURCE_FILES
 	main.cpp
 )
 
-add_executable(multifile ${SOURCE_FILES})
+add_executable(${app_name} ${SOURCE_FILES})
+set(folder "Mixed-Precision")
+set_target_properties(${app_name} PROPERTIES FOLDER ${folder})
+
 # add libraries if you need them
 #target_link_libraries(multifile required-library1 required-library2)
 install(TARGETS multifile DESTINATION ${MPIR_INSTALL_BIN_DIR})

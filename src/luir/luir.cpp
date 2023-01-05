@@ -1,16 +1,16 @@
 /** ************************************************************************
-* LUIR: A = LU Iterative Refinement with POSITS
-*    Addresses fundamental important problem of solving Ax = b.
+* LUIR: A = LU Iterative Refinement with POSITs
+* 
+*    Addresses the fundamental problem of solving Ax = b efficiently.
 *      
-*  @author:     James Quinlan
- * @date:       2022-12-13
- * @copyright:  Copyright (c) 2022 James Quinlan
- * @license:    MIT Open Source license 
+* @author:     James Quinlan
+* @date:       2022-12-13
+* @copyright:  Copyright (c) 2022 James Quinlan
+* @license:    MIT Open Source license 
 * 
 * This file is part of the Mixed Precision Iterative Refinement project
 * *************************************************************************
 */
-// Build Directory = universal/build/applications/numeric
 
 // Environmental Configurations
 #include<universal/utility/directives.hpp>

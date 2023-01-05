@@ -20,3 +20,9 @@ After that, the repo is ready to be build:
 ```
 
 This will build the libraries, the cli command `src/semver` and the tests in `test/mpir_tests`.
+
+# Project structure
+
+The following figure shows the project structure of this repository:
+
+![Project Structure](img/project-structure.png)

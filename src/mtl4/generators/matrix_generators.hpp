@@ -8,6 +8,7 @@
 #include <random>
 #include <algorithm>
 #include <boost/numeric/mtl/mtl.hpp>
+#include <universal/number/posit/posit.hpp>
 #include <universal/functions/binomial.hpp>
 
 namespace sw {

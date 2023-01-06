@@ -13,7 +13,7 @@ set(SOURCE_FILES
 add_executable(${app_name} ${SOURCE_FILES})
 set(folder "Mixed-Precision")
 set_target_properties(${app_name} PROPERTIES FOLDER ${folder})
-set(test_name ctest_${app_name})
+set(test_name ${app_name})
 add_test(${test_name} ${RUNTIME_OUTPUT_DIRECTORY}/${test_name})
 
 # add libraries if you need them

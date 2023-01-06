@@ -2,6 +2,12 @@
 
 This repo contains the code associated with the paper: "Mixed Precision Iterative Refinement"
 
+| **System** | **Status** | **More information** |
+|------------|------------|----------------------|
+| [FOSSA Status](https://app.fossa.com/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal) | [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fstillwater-sc%2Funiversal?ref=badge_shield) | Open-source license dependency scanner |
+| [GitHub Actions](https://github.com/jamesquinlan/mixed-precision-ir/actions) | [![Build Status](https://github.com/jamesquinlan/mixed-precision-ir/actions/workflows/cmake.yml/badge.svg?branch=main)](https://github.com/jamesquinlan/mixed-precision-ir) | Latest Linux/MacOS/Windows builds and regression tests |
+
+
 # How to build
 
 This repo uses git submodules. The first step after pulling the repository is to configure the submodules:

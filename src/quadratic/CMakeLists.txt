@@ -13,8 +13,10 @@ set(SOURCE_FILES
 add_executable(${app_name} ${SOURCE_FILES})
 set(folder "Mixed-Precision")
 set_target_properties(${app_name} PROPERTIES FOLDER ${folder})
+set(test_name ctest_${app_name})
+add_test(${test_name} ${RUNTIME_OUTPUT_DIRECTORY}/${test_name})
 
 # add libraries if you need them
-#target_link_libraries(quadratic required-library1 required-library2)
-install(TARGETS quadratic DESTINATION ${MPIR_INSTALL_BIN_DIR})
+#target_link_libraries(${app_name} required-library1 required-library2)
+install(TARGETS ${app_name} DESTINATION ${MPIR_INSTALL_BIN_DIR})
 #install(FILES my-consolidated-include.hpp DESTINATION ${MPIR_INSTALL_INCLUDE_DIR})
